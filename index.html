@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Missha Velvet Finish Cushion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="header">
+    <div id="logo" class="logo-container">
+    <img id="header-img" src="https://i.imgur.com/9e8e32n.png" alt="Two Hearts Logo" class="logo-img">
+  </a>
+  <span class="logo-text">MISSHA</span>
+</div>
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#video-section">Video</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+      <a class="nav-link" href="#form-section">Sign Up</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="features">
+      <h2>Why Choose Missha Velvet Finish Cushion?</h2>
+      <p>Experience flawless skin with the Missha Velvet Finish Cushion SPF50+/PA+++. Perfect for all-day wear and sun protection.</p>
+      <ul>
+        <li><i class="fas fa-check-circle"></i><strong>Long-lasting Coverage:</strong> Provides a smooth, velvety finish that lasts all day.</li>
+        <li><i class="fas fa-sun"></i><strong>SPF50+/PA+++:</strong> Protects your skin from harmful UV rays.</li>
+        <li><i class="fas fa-feather-alt"></i><strong>Lightweight Formula:</strong> Feels breathable and comfortable on your skin.</li>
+      </ul>
+    </section>
+
+    <section id="video-section">
+      <h2>See the Velvet Finish in Action</h2>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/nj77eYfgsfo?si=CoS_X4RxGq66ztaR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <div class="pricing-container">
+        <div class="pricing-card">
+          <h3>Single Cushion</h3>
+          <p>$19.99</p>
+          <p>Perfect for personal use. Includes one compact with cushion and mirror.</p>
+        </div>
+        <div class="pricing-card">
+          <h3>Double Pack</h3>
+          <p>$34.99</p>
+          <p>Great value! Includes two cushions for extended use.</p>
+        </div>
+        <div class="pricing-card">
+          <h3>Gift Set</h3>
+          <p>$49.99</p>
+          <p>Includes a cushion, refill, and a stylish pouch. Perfect for gifting!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="form-section">
+      <h2>Sign Up for Exclusive Offers</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+        <input id="submit" type="submit" value="Sign Up">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Missha Velvet Finish Cushion. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.pricing-card').forEach(card => {
+      card.addEventListener('click', () => {
+        document.querySelector('#form-section').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
